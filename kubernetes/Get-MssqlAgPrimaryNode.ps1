@@ -41,7 +41,7 @@ function Get-MssqlAgPrimaryNode {
             }
             else{
                 Write-Host "Does the current port forwarding configured meet your needs?, press (y) to continue or (n) to terminate"
-                $portForwardingStatus = Read-Host -Prompt ">" -eq 'y' 
+                $portForwardingStatus = Read-Host -Prompt ">"
             }
             if($portForwardingStatus -eq 'y'){
                 foreach ($portFwd in $portsList) {
